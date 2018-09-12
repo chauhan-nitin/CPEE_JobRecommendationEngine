@@ -2,8 +2,11 @@
 #~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ Ingesting the Datasets ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~~#
 ###############################################################################
 rm(list=ls(all=TRUE))
+#Current working directory
 getwd()
-setwd("C:/Users/obc1/Desktop/INSOFE/Job recommendation engine")
+#Set working directory to where your data files are stored
+setwd("C:/Users/Desktop/Job recommendation engine")
+
 combined_jobs_final <- read.csv(file = "Combined_Jobs_Final.csv", header=TRUE)
 credentials <- read.csv(file = "Credentials.csv", header=TRUE)
 education <- read.csv(file = "Education.csv", header = TRUE)
