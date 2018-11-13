@@ -1,4 +1,4 @@
-## CPEE_JobRecommendationEngine
+## Job Recommendation Engine
 The purpose of this project is to build a hybrid job recommendation engine for Quickhire using Collaborative filtering, which makes the use of numerical ratings given by applicants for particular jobs to find similarity between the applicants, as well as of similar job items to predict recommendations of unseen job items to applicants.
 
 1. Objective: To reduce the burden on the user to search through the catalogue to find relevant stuff. Thereby enhancing user experience and generating more business value.
@@ -13,3 +13,9 @@ The purpose of this project is to build a hybrid job recommendation engine for Q
 *	```Find 20 jobs that are similar to each one of them```
 *	```We now have a superset of jobs```
 *	```Sort these Jobs in ascending order of distance between the applicant’s location & job’s location and recommend top 10 jobs from that list.```
+
+• ```Challenge```: Build a hybrid job recommendation engine for a US based job portal, which makes the use of numerical ratings given by applicants for particular jobs and to find similarity between the applicants, as well as of similar job items to predict recommendations of unseen job items to applicants.
+
+• ```Solution```: Casting the training data of applicant ratings to matrix (high dimension). Incorporated dimensionality reduction approaches like PCA and SVD to counter curse of dimensionality problem, implemented collaborative filtering along with content-based filtering to handle 'cold start' and 'gray sheep' problem using cosine similarity.
+
+• ```Result```: Reduced burden on the user to search through the catalog to find relevant stuff. Thereby enhancing user experience and driving more business value. Calculating the performance of this recommendation engine will be possible with the adaptation of A/B testing.
